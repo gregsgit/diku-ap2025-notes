@@ -5,7 +5,8 @@ Henriksen](https://hjemmesider.diku.dk/~athas/).
 Seems like also [Fritz
 Henglein](https://di.ku.dk/english/staff/?pure=en/persons/14770). 
 
-* Main page: https://github.com/diku-dk/ap-e2025-pub/tree/main
+* Main site: https://github.com/diku-dk/ap-e2025-pub/tree/main
+  * you probably want to clone or fork that repo
 
 ## Each week
 
@@ -14,11 +15,14 @@ Henglein](https://di.ku.dk/english/staff/?pure=en/persons/14770).
   
 * Read that week's lecture notes and work through exercises; e.g.,
   [week 1](https://github.com/diku-dk/ap-e2025-pub/tree/main/week1)
+
+  * To make sure you are set up with haskell, go to,
+    e.g. `week1/handout` and make sure `cabal test` works (no errors) 
   
 * Work on that week's assignment; e.g., 
 [week 1](https://github.com/diku-dk/ap-e2025-pub/tree/main/a1) 
 
-## Nix
+## Using Nix for Haskell
 
 Install nix following: https://nixos.org/download/#download-nix
 
@@ -29,11 +33,12 @@ experimental-features = nix-command flakes
 
 Even though the Haskell `stack` tool has nix integration, my approach
 is very basic. I just do `nix develop` at the command line, which runs
-the [flake.nix](./flake.nix), which puts me at a shell with haskell
-tools available. From there, I start up an emacs, and haskell mode is
-able to find everything. 
+this [flake.nix](./flake.nix) script, which puts me at a shell with
+haskell tools available. From there, I start up an emacs, and haskell
+mode is able to find everything.
 
 If, for example, you've cloned the `ap-e2025-pub` repo and want to use
-nix, you first have to add the `flake.nix` file to the folder, and
-then do `git add flake.nix` so that nix "sees" the file.
+nix, you first have to copy the `flake.nix` file to the `ap-e2025-pub`
+top level folder, and then do `git add flake.nix` so that nix "sees"
+the file. Then you can do `nix develop`.
 
