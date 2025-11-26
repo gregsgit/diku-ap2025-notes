@@ -15,10 +15,16 @@ Henglein](https://di.ku.dk/english/staff/?pure=en/persons/14770).
   
 * Read that week's lecture notes and work through exercises; e.g.,
   [week 1](https://github.com/diku-dk/ap-e2025-pub/tree/main/week1)
-
+  
   * To make sure you are set up with haskell, go to,
     e.g. `week1/handout` and make sure `cabal test` works (no errors) 
   
+  * The recommended strategy for the exercises is to start editing the
+    starter files in the `handout` folder. Note that the final
+    exercise solutions are given in the `solution` folder, but the
+    goal is for you to work out the exercise solutions yourself, with
+    minimal reference to the `solution` folder sources
+
 * Work on that week's assignment; e.g., 
 [week 1](https://github.com/diku-dk/ap-e2025-pub/tree/main/a1) 
 
@@ -42,3 +48,11 @@ nix, you first have to copy the `flake.nix` file to the `ap-e2025-pub`
 top level folder, and then do `git add flake.nix` so that nix "sees"
 the file. Then you can do `nix develop`.
 
+## Emacs with eglot and haskell language server lsp-haskell
+
+For some reason, I have not been able to get eglot + lsp-haskell
+working well for me. I can get the server to start, but errors from
+build are not reported, which is a real pain. I've even tried copying
+just, e.g. week1/handout to a folder under my ~/Downloads, thinking
+the issue is that there are too many separate projects (one per week),
+but that brute force approach did not seem to help.
