@@ -25,8 +25,39 @@ Henglein](https://di.ku.dk/english/staff/?pure=en/persons/14770).
     goal is for you to work out the exercise solutions yourself, with
     minimal reference to the `solution` folder sources
 
-* Work on that week's assignment; e.g., 
-[week 1](https://github.com/diku-dk/ap-e2025-pub/tree/main/a1) 
+* Work on that week's assignment; e.g., [week 1](https://github.com/diku-dk/ap-e2025-pub/tree/main/a1) 
+The assignment is in, e.g. "a1.pdf".
+The "handout" archive contains a project tree with starter files to
+which you are supposed to add code, including a unit test suite.
+For week 1, at least, the assignment starting source is just the
+result of doing the exercises. 
+
+## Notes from working through week 1
+
+My goal for looking into this course was to get comfortable with a
+monad-centric approach to implementing a compiler, such as is
+pervasive in the [futhark compiler](https://github.com/diku-dk/futhark). 
+
+Unfortunately, week 1 doesn't touch on monads. Nonetheless, I spent a
+fair amount of time tediously implementing the exercises, in the order
+given, and writing test cases. It's pretty standard stuff if you've
+written an interpreter before. It served to remind me of the basics of
+Haskell. The assignment for week 1 took less time than the exercises
+-- I found the tasks straightforward. I didn't spend time removing
+parentheses from the pretty printer.
+
+If you want to do some work, but not spend all the time working
+through the exercises, you could jump right to the assignment. 
+
+The beginning of `Eval_Tests.hs` in the week 1 assignment has
+definition of the Y combinator, which is always baffling, and then
+uses that definition to implement factorial. Very pretty.
+
+The remaining weeks introduce basic functors, etc. and then monadic
+parsing. Then there's a digression into "free monads" in
+week 4. Troels said to ignore the free monad stuff, so I'm not sure
+what to make of it. Nothing really on stacks of monads for
+compilation.
 
 ## Using Nix for Haskell
 
