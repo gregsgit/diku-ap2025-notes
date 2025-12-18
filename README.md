@@ -32,6 +32,18 @@ which you are supposed to add code, including a unit test suite.
 For week 1, at least, the assignment starting source is just the
 result of doing the exercises. 
 
+## Notes from working through week 2
+
+Week 2 is implementing an interpreter for mostly the same language as
+for week 1, but this time in a monadic style. While I found week 1
+easy, I did struggle with the monadic approach. While writing
+individual `eval` functions is more concise, the monadic plumbing
+takes more work. Also, I'm still vaguely uneasy that monads hide both
+state and control flow. 
+
+I did find that struggling with the monad plumbing was very helpful
+for me, including implementing the monadic type checker.
+
 ## Notes from working through week 1
 
 My goal for looking into this course was to get comfortable with a
